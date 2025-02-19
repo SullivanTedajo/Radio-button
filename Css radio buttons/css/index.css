@@ -1,0 +1,57 @@
+@import url("global.css");
+/* --- ******  HEADER STYLE  ****** --- */
+
+.header{
+    background-color: var(--green-background);
+    padding: 1.5em;
+}
+
+.header_title{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* --- ******  MAIN STYLE  ****** --- */
+.main-form{
+    background-color: var(--dark-background);
+    padding: 4em;
+    display: flex;  
+    place-content: center; 
+}
+.form{
+    width: 40em;
+    color: var(--muted-color);
+}
+.form-control{
+    border-bottom: .05em solid var(--muted-color);
+    padding-block:2em ;
+    width: 100%;
+}
+.form-label{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+.form-label:hover {
+    color: var(--white);
+    transition: color .2s  ease-in;
+}
+.form-input:checked ~ .form-label{
+    color: var(--green-button);
+}
+
+
+
+
+/* --- ******  FOOTER STYLE  ****** --- */
+.footer{
+    background-color: var(--dark-background);
+    text-align: center;
+    padding: 1.2em;
+    color: var(--white);
+    position: relative;
+    bottom: 0;
+}
+.footer_link:hover{
+    color: var(--green-button);
+    transition: color .7s;
+}
